@@ -1,0 +1,36 @@
+<!--An important point is that the web browser will parse the page from top to bottom. Therefore, the document from top to bottom. Therefore if A apperas above B  in the document then A will be rendered before B. Not necessary that A will above B in the web page. But it will be rendered before B.-->
+
+
+<!DOCTYPE html>		<!-- This mentions the document type -->
+
+<html> 			<!-- This is a container tag They generally consist of starting tags and ending tags The html tag is necessary for   any html document. It is necessary for the other html tags to be resent within the html tags-->
+	<head>	<!--These are container tags too-->
+		<meta charset="UTF-8">
+		<meta name="description" content="This is an awesome website">
+		<!-- Here we see the use of meta tag. Note tha this i not a container tag. Meta tag's job is to define meta data. This is used by a web server to render our web pages. Here we also see the use of attributes in a tag. meta is the tag, which has attributes charset, name, content. Each of these attributes have a value associted with them. Also always define meta tag in the head of a html document. Many html tags have attributes that enable the browser to render them effectively-->
+		
+		<title>
+			My web page
+		</title>
+	</head>	
+	<body style="background-color:lightblue;">	<!--Container tag again with an attribute enabled-->
+		<h1> 	<!--Container tag to define a heading for site. The larger the number associated to the header tag, the smaller the heading-->
+			<i><b>This is my website</b></i>
+		</h1>
+		<p>   <!--Paragraph tag to make a paragraph. Container tag-->
+		<big style="color:red;"><b>This</b></big> <b style="color:blue;"><small>is</b></small> an awesome paragraph<br/> <!--Self closing tag used to denote lack of content. This is a line break tag used for new line-->
+			This is broken<br/>
+			<hr/>
+			H<sub>2</sub>O<br/> <!--Subscript tag-->
+			e=mc<sup>2</sup>    <!--Superscript tag-->
+		</p>
+
+		<p style="color:blue; background-color:yellow"> <!--Note that we used an attribute called style-->
+			This is a stylised bit of text<br/>
+		</p>
+	</body>
+
+	
+
+</html>
+
