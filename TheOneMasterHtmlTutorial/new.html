@@ -1,0 +1,90 @@
+
+<!--An important point is that the web browser will parse the page from top to bottom. Therefore, the document from top to bottom. Therefore if A apperas above B  in the document then A will be rendered before B. Not necessary that A will above B in the web page. But it will be rendered before B.-->
+
+
+<!--Note that many of the jobs can be done without the use of so many tags. But, the extensive use of tags help search engines to understand better what your web page is about. It allows them to quickly search through your document and know what it is about. Therefore, there is a higher chance that your page will be on the list of searches of google-->
+
+
+
+<!DOCTYPE html>		<!-- This mentions the document type -->
+
+<html> 			<!-- This is a container tag They generally consist of starting tags and ending tags The html tag is necessary for   any html document. It is necessary for the other html tags to be resent within the html tags-->
+	<head>	<!--These are container tags too-->
+		<meta charset="UTF-8">
+		<meta name="description" content="This is an awesome website">
+		<!-- Here we see the use of meta tag. Note tha this i not a container tag. Meta tag's job is to define meta data. This is used by a web server to render our web pages. Here we also see the use of attributes in a tag. meta is the tag, which has attributes charset, name, content. Each of these attributes have a value associted with them. Also always define meta tag in the head of a html document. Many html tags have attributes that enable the browser to render them effectively-->
+		
+		<title>
+			My web page
+		</title>
+	</head>	
+	<body style="background-color:lightblue;">	<!--Container tag again with an attribute enabled-->
+		<header>   <!--Sets the header for the web page -->
+			<nav>
+				This is a navigational element
+			</nav>
+			Hello this is a header
+		</header>
+		
+		<main>   <!--This is the main content of the body--> 
+			<h1> 	<!--Container tag to define a heading for site. The larger the number associated to the header tag, the smaller the heading-->
+				<i><b>This is my website</b></i>
+			</h1>
+			<p>   <!--Paragraph tag to make a paragraph. Container tag-->
+			<big style="color:red;"><b>This</b></big> <b style="color:blue;"><small>is</b></small> an awesome paragraph<br/> <!--Self closing tag used to denote lack of content. This is a line break tag used for new line-->
+				This is broken<br/>
+				<hr/>
+				H<sub>2</sub>O<br/> <!--Subscript tag-->
+				e=mc<sup>2</sup>    <!--Superscript tag-->
+			</p>
+
+			<p style="color:blue; background-color:yellow"> <!--Note that we used an attribute called style-->
+				This is a stylised bit of text<br/>
+			</p>
+
+			<article>   <!--This is generally used for blogs-->
+				<section>
+					Hello World this is an article on programming. C++ and Java are personally the two languages that I excel in.<br/>
+					Not just that, I also think that these two languages are kind of like the pillar stones of computer science in general<br/>
+				</section>
+				<section>
+					C++ code is very close to the machine and is practically a wrapper over assembly language..of course ignoring the <br/>libraries that need to be additionally invoked by the g++ compiler. Java<br/> is also a game changer because of its byte code strategy.
+				</section>
+			</article>
+			
+			<aside> <!--Content that is not directly related-->
+				This is an adevertisement<br/>
+				BEWARE
+			</aside>
+			<br/><br/>
+			<a target="_blank" href="https://www.google.com"> <!--Again note that href is simply an attribute-->
+				<b><i>click here to go to google</i></b>
+			</a>
+			<br/>
+			<img width="300" src="/home/shayaksarkar/Pictures/ss.png" alt="Image Not Found"/>  <!--Yep its a self closing tag-->
+			<br/>
+			<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg" target="_blank">
+				<img width="300" src="/home/shayaksarkar/Pictures/ss.png"/>
+			</a>
+			this is hyperlink embedded within an image<br/>
+			
+			<b><big> In case of doubt just play this video </big></b><br/>
+			<video width="300" poster="/home/shayaksarkar/Desktop/Happy.jpg " alt="Sorry :(" src="https://www.youtube.com/watch?v=pQN-pnXPaVg" controls>Message displayed in case video cant be played</video> <!--controls attribute gives the video controls to the user for playing the video. You an disable this option in case you dont want the user to be able to play the video-->
+
+			<br/><br/>
+			this is an embedded youtube video using iframe
+			<br/>
+			<iframe width="300" src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe >   <!--iframe is used to embed contents from other web sites into the web page-->
+
+			
+
+			
+		</main>
+		<footer>		<!--footer for the web page-->
+			<hr/>
+			This is the footer for my web page
+		</footer>
+	</body>
+
+</html>
+
