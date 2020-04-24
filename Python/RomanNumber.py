@@ -17,7 +17,7 @@ def printNumber(dig,place):
         rom_dict={'':'','I':'M','V':'{Vdash}','X':'{Xdash}'};
     
     elif place==10000:
-        rom_dict={'':'','I':'{Xdash}','V':'Ldash','X':'Cdash'};
+        rom_dict={'':'','I':'{Xdash}','V':'{Ldash}','X':'{Cdash}'};
     
     elif place==100000:
         rom_dict={'':'','I':'{Cdash}','V':'{Ddash}','X':'{Mdash}'};
@@ -37,15 +37,7 @@ def printRoman(number,place):
 if __name__=='__main__':
 
     while True:
-        while True:
-            try:
-                val=input('Enter the number: ')
-                if val=='quit':
-                    exit(0)
-            except:
-                continue
-            val=int(val)
-            break
+        val=int(input("Enter a value: "))
         printRoman(val,1)
         print()
 
